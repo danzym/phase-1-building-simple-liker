@@ -1,15 +1,15 @@
-require ( './helpers.js' );
+require("./helpers.js");
 
-const sinon = require( 'sinon' );
-const helpers = require( './helpers' );
-const chai = require( 'chai' );
-const spies = require( 'chai-spies' );
+const sinon = require("sinon");
+const helpers = require("./helpers");
+const chai = require("chai");
+const spies = require("chai-spies");
 
-chai.use( spies );
+chai.use(spies);
 
-describe( "main.js", () => {
+describe("main.js", () => {
   it("contains a hidden modal", () => {
-    let modal = document.querySelector('.hidden')
-    expect(modal).not.to.equal(null)
-  } )
-} )
+    let modal = document.querySelector(".hidden");
+    expect(modal).not.to.equal(null);
+  });
+});
